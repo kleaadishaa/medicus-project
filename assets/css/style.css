@@ -2683,6 +2683,10 @@ color: #062d2f;
     min-height:110px;
   }
 
+  .d-flex.align-items-center.mb-3 {
+    justify-content: center;
+}
+
 }
 /* per celularet */
 @media (max-width:575.98px){
@@ -2703,6 +2707,9 @@ color: #062d2f;
     height:180px;
   }
 
+.d-flex.align-items-center.mb-3 {
+    justify-content: center;
+}
 }
 
 /* per celulare te vegjel */
