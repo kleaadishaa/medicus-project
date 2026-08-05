@@ -3280,7 +3280,12 @@ body.services-page .link-arrow {
   padding: 2.5rem 2.4rem;
   border: 1px solid rgba(7, 57, 60, .08);
   border-radius: 22px;
-  background:url(../img/background.jpg);
+
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center center; /* ose 60% center */
+  background-repeat: no-repeat;
+
   box-shadow: 0 10px 30px rgba(7, 57, 60, .08);
   backdrop-filter: blur(10px);
   overflow: hidden;
@@ -3307,7 +3312,7 @@ body.services-page .link-arrow {
 }
 
 .service-title-row h1 {
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.3rem, 3.5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.15;
   margin: 0;
@@ -3388,6 +3393,7 @@ body.services-page .link-arrow {
     padding: 0;
     flex-wrap: wrap;
     gap: 1rem;
+    align-self: center;
   }
 
   .service-icon {
@@ -4010,11 +4016,10 @@ body.services-page .link-arrow {
 
 .details-breadcrumb {
   font-family: var(--font-mono);
-  font-size: 1rem;
   letter-spacing: .06em;
   text-transform: uppercase;
   opacity: .85;
-  margin-bottom: 0 .5rem;
+  margin-bottom: .5rem;
 }
 
 .details-breadcrumb .breadcrumb {
@@ -4031,15 +4036,20 @@ body.services-page .link-arrow {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  font-size: clamp(0.65rem, 0.55rem + 0.25vw, 2rem);
+
 }
 
 .details-breadcrumb .breadcrumb-item a:hover {
   color: #ffd166;
+
 }
 
 .details-breadcrumb .breadcrumb-item.active {
   color: #ffffff;
   font-weight: 600;
+  font-size: clamp(0.65rem, 0.55rem + 0.25vw, 2rem);
+
 }
 
 /* PROFILE HEADER  */
