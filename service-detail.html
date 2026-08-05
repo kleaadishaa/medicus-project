@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Detail | Medicus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="service-detail-page">
+  
+  <site-nav></site-nav>
+
+ <main class="container my-5">
+
+  <!-- Breadcrumb -->
+      <nav class="details-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="breadcrumb-item">
+            <a href="services.html">Services</a>
+          </li>
+
+          <li class="breadcrumb-item active" id="breadcrumbService"></li>
+        </ol>
+      </nav>
+
+  <!-- Service Header -->
+      <section class="service-hero-bg">
+        <div id="serviceHeader" class="service-header">   <!-- Filled by JS --> </div>
+      </section>
+
+    <!-- Quick Facts -->
+      <div id="quickFacts"> <!-- Filled by JS --> </div>
+    <!-- Overview + Highlights -->
+      <section class="service-section">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div id="overviewText"><!-- Filled by JS --> </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="overview-highlights">
+              <h5>Why Choose Us</h5>
+
+              <div class="highlight-item">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>Certified Specialists</span>
+              </div>
+
+              <div class="highlight-item">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <span>Advanced Technology</span>
+              </div>
+
+              <div class="highlight-item">
+                <i class="fa-solid fa-clock"></i>
+                <span>24/7 Emergency Care</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Treatments -->
+      <section class="service-section">
+        <h5>Treatments</h5>
+        <div id="treatments"> <!-- Filled by JS --> </div>
+      </section>
+
+      <!-- Our Doctors -->
+      <section class="service-section">
+        <h5>Our Doctors</h5>
+        <div id="doctorsTab"> <!-- Filled by JS --> </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="service-section">
+        <h5>Frequently Asked Questions</h5>
+        <div id="faqs"> <!-- Filled by JS --> </div>
+      </section>
+
+          <!-- CTA -->
+    <section class="py-3">
+      <div class="container">
+        <div class="cta" style="background-color: #07393c; color: #ffffff;">
+          <h2>Do you have questions about the service?</h2>
+          <p>Contact our team with the contact information provided right below.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer></site-footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/data/services-data.js"></script>
+  <script type="module" src="assets/js/data/doctors-data.js"></script>
+  <script type="module" src="assets/js/service-detail.js"></script>
+
+  </body>
+</html>
