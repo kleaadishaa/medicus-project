@@ -107,7 +107,7 @@ Through this project, I gained practical experience in:
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/kleaadishaa/medicus-project.git
 ```
 
 2. Open the project folder.
